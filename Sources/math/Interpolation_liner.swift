@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol Math {
+public protocol Interpolation_Line {
 
     func lineFunctionValue(inArgumentValue x: CGFloat,
                            firstFunctionKnownValue y1: CGFloat,
@@ -16,7 +16,7 @@ public protocol Math {
                            secondFunctionKnownArgument x2: CGFloat) -> CGFloat
 }
 
-public extension Math {
+public extension Interpolation_Line {
     
     func lineFunctionValue(inArgumentValue x: CGFloat,
                            firstFunctionKnownValue y1: CGFloat,
