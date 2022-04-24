@@ -16,13 +16,13 @@ public protocol Interpolation_Line {
                                   secondFunctionKnownArgument x2: CGFloat) -> CGFloat
 }
 
-public extension Interpolation_Line {
+extension Math: Interpolation_Line {
     
-    static func lineFunctionValue(inArgumentValue x: CGFloat,
-                                  firstFunctionKnownValue y1: CGFloat,
-                                  secondFunctionKnownValue y2: CGFloat,
-                                  firstFunctionKnownArgument x1: CGFloat,
-                                  secondFunctionKnownArgument x2: CGFloat) -> CGFloat {
+    public static func lineFunctionValue(inArgumentValue x: CGFloat,
+                                         firstFunctionKnownValue y1: CGFloat,
+                                         secondFunctionKnownValue y2: CGFloat,
+                                         firstFunctionKnownArgument x1: CGFloat,
+                                         secondFunctionKnownArgument x2: CGFloat) -> CGFloat {
         
         return (x - y2) * ((x2 - x1) / (y2 - y1)) + x2
     }
