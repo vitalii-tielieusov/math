@@ -9,16 +9,16 @@ import UIKit
 
 public protocol Interpolation_Line {
 
-    func lineFunctionValue(inArgumentValue x: CGFloat,
-                           firstFunctionKnownValue y1: CGFloat,
-                           secondFunctionKnownValue y2: CGFloat,
-                           firstFunctionKnownArgument x1: CGFloat,
-                           secondFunctionKnownArgument x2: CGFloat) -> CGFloat
+    static func lineFunctionValue(inArgumentValue x: CGFloat,
+                                  firstFunctionKnownValue y1: CGFloat,
+                                  secondFunctionKnownValue y2: CGFloat,
+                                  firstFunctionKnownArgument x1: CGFloat,
+                                  secondFunctionKnownArgument x2: CGFloat) -> CGFloat
 }
 
 public extension Interpolation_Line {
     
-    public func lineFunctionValue(inArgumentValue x: CGFloat,
+    static func lineFunctionValue(inArgumentValue x: CGFloat,
                                   firstFunctionKnownValue y1: CGFloat,
                                   secondFunctionKnownValue y2: CGFloat,
                                   firstFunctionKnownArgument x1: CGFloat,
